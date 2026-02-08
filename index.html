@@ -205,7 +205,7 @@ document.getElementById('form').addEventListener('submit', e => {
   riskBox.className = ''; riskBox.style.display = 'block';
   if (vpp < 17.9) { riskBox.classList.add('risk-low'); riskText.innerHTML = "<b>Вклад патологии почек:</b> ВПП < 17,9%."; }
   else if (vpp <= 43.3) { riskBox.classList.add('risk-medium'); riskText.innerHTML = "<b>Вклад патологии почек:</b> ВПП 17,9 - 43,3%."; }
-  else { riskBox.classList.add('risk-high'); riskText.innerHTML = "<b>Вклад патологии почек!</b> ВПП > 43,3%."; }
+  else { riskBox.classList.add('risk-high'); riskText.innerHTML = "<b>Вклад патологии почек:</b> ВПП > 43,3%."; }
 
   let patientPoints = [];
   let agesUsed = [ageNow];
