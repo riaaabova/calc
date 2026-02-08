@@ -203,9 +203,9 @@ document.getElementById('form').addEventListener('submit', e => {
   const riskBox = document.getElementById('riskIndicator');
   const riskText = document.getElementById('riskText');
   riskBox.className = ''; riskBox.style.display = 'block';
-  if (vpp < 17.9) { riskBox.classList.add('risk-low'); riskText.innerHTML = "<b>Низкий риск смерти:</b> ВПП < 17,9%."; }
-  else if (vpp <= 43.3) { riskBox.classList.add('risk-medium'); riskText.innerHTML = "<b>Умеренный риск смерти:</b> ВПП 17,9 - 43,3%."; }
-  else { riskBox.classList.add('risk-high'); riskText.innerHTML = "<b>Высокий риск смерти!</b> ВПП > 43,3%."; }
+  if (vpp < 17.9) { riskBox.classList.add('risk-low'); riskText.innerHTML = "<b>Вклад патологии почек:</b> ВПП < 17,9%."; }
+  else if (vpp <= 43.3) { riskBox.classList.add('risk-medium'); riskText.innerHTML = "<b>Вклад патологии почек:</b> ВПП 17,9 - 43,3%."; }
+  else { riskBox.classList.add('risk-high'); riskText.innerHTML = "<b>Вклад патологии почек!</b> ВПП > 43,3%."; }
 
   let patientPoints = [];
   let agesUsed = [ageNow];
